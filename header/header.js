@@ -7,7 +7,7 @@ if(id_check == 'index'){
 
 console.log(id_check);
 function loadHeader() {  
-    fetch('../header/header.html')  
+    fetch('header/header.html')  
         .then(response => {  
             if (!response.ok) {  
                 throw new Error('Network response was not ok');  
@@ -21,7 +21,7 @@ function loadHeader() {
         .catch(error => {  
             console.error('Có lỗi xảy ra khi tải header:', error);  
         });
-    document.querySelector('head').innerHTML += '<link rel="stylesheet" href="../header/header.css">'
+    document.querySelector('head').innerHTML += '<link rel="stylesheet" href="header/header.css">'
     document.querySelector('head').innerHTML += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />'
 }
 loadHeader();
