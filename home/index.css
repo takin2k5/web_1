@@ -1,6 +1,0 @@
-:root{
-    --bg_color: #ecd523;
-}
-body{
-    background-color: var(--bg_color);
-}
